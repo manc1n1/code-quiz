@@ -7,6 +7,43 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
+        <header>
+            <button id="button-hiscore">View Hiscores</button>
+            <p id="p-timer" style="display: none">
+                Time: <span id="span-time"></span>
+            </p>
+        </header>
+        <main>
+            <h1>Coding Quiz Challenge</h1>
+            <p id="instructions">
+                Try to answer the following code-related questions within the
+                time limit. Keep in mind that incorrect answers will penalize
+                your score/time by ten seconds.
+            </p>
+            <button id="button-start">Start Quiz</button>
+            <ul id="choicesList"></ul>
+            <section id="gameOver" style="display: none">
+                <h1 style="color: red">Game Over</h1>
+                <h2>Your final score is <span id="span-score">0</span></h2>
+                <p>Enter Name:</p>
+                <input type="text" id="userInput" value="" />
+                <button id="button-submit">Submit</button>
+            </section>
+            <section id="hiscores" style="display: none">
+                <h1>Hiscores</h1>
+                <ol id="hiscoresList"></ol>
+                <button id="button-back">Go Back</button>
+                <button id="button-clear">Clear Hiscores</button>
+            </section>
+            <section id="isCorrect" style="display: none">
+                <hr />
+                <p>Correct!</p>
+            </section>
+            <section id="isIncorrect" style="display: none">
+                <hr />
+                <p>Incorrect!</p>
+            </section>
+        </main>
         <script src="./assets/js/script.js"></script>
     </body>
 </html>
